@@ -1,0 +1,46 @@
+{
+  "expo": {
+    "name": "foodJournalTracker",
+    "slug": "foodJournalTracker",
+    "version": "1.0.0",
+    "sdkVersion": "53.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSDocumentsFolderUsageDescription": "Need access to documents folder to save and read backup files",  
+        "NSCameraUsageDescription": "Need access to camera to take food photos", 
+        "NSPhotoLibraryUsageDescription": "Need access to photo library to select food photos"  
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "permissions": [
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE",
+        "CAMERA"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-sqlite",
+      "expo-file-system",
+      "expo-document-picker",
+      "expo-camera",
+      "expo-image-picker"
+    ]
+  }
+}
