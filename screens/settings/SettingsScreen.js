@@ -202,21 +202,7 @@ const SettingsScreen = ({ route, navigation }) => {
         <Text style={styles.buttonText}>Log Out</Text>
       </TouchableOpacity>
 
-      <View style={styles.section}>
-        <Text style={styles.sectionTitle}>Data Management</Text>
-        <TouchableOpacity
-          style={styles.button}
-          onPress={exportData}
-        >
-          <Text style={styles.buttonText}>Export Data</Text>
-        </TouchableOpacity>
-        <TouchableOpacity
-          style={styles.button}
-          onPress={importData}
-        >
-          <Text style={styles.buttonText}>Import Data</Text>
-        </TouchableOpacity>
-      </View>
+      
     </View>
   );
 };
