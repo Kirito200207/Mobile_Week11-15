@@ -89,6 +89,7 @@ Mobile_Week11-15/
 Error identification process: After I had cloned the the provided repository and executed 'npm install' within the project directory, I encountered a problem when I launched the application.
 
 Solution applied: It says that the Project is incompatible with this version of Expo Go. So I upgraded this project to SDK53 and it was solved.
+
 2.
 Error identification process: In the Add Journal interface, the Take Photo button cannot trigger the phone camera.
 
@@ -102,25 +103,29 @@ Solution applied: To fix it, I use a tool called ’nvm’ to change the version
 
 
 These improvements collectively resolved critical compatibility and functional issues, ensuring the application runs smoothly with the updated environment and corrected camera interaction logic.
+
 4.
 Error identification process: The execAsync method was found to be undefined in the database initialization code.
 
 Solution applied: Updated the components/database/database.js file to use the new getAllAsync and runAsync APIs from expo-sqlite .
+
 5.
 Error identification process: Attempting to register with an existing email address triggered a unique constraint violation.
 
 Solution applied: Improved error handling in authScreen.js to identify the specific constraint error and display a user-friendly alert message.
+
 6.
 Error identification process: Attempting to register with an existing email address triggered a unique constraint violation.
 
 Solution applied: Improved error handling in authScreen.js to identify the specific constraint error and display a user-friendly alert message.
+
 7.
 Error identification process: ImagePicker.MediaTypeOptions was deprecated in expo-image-picker.
 
 Solution applied: Updated to use the mediaTypes: ['images'] option instead.
+
 8.
 Error identification process: The new expo-sqlite version altered the structure of insert results, making it impossible to retrieve insertId correctly.
 
 Solution applied: Added checks for both insertId and lastInsertRowId to ensure navigation uses the correct user ID.
-=======
->>>>>>> 8b3cfc9dc2f5655d70591e9644f637d429f31c37
+
