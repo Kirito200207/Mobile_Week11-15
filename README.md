@@ -81,6 +81,7 @@ Mobile_Week11-15/
 ├── package.json         # Dependencies and scripts  
 ├── index.js             # Expo root component registration  
 └── .gitignore           # Files/directories to ignore in Git  
+<<<<<<< HEAD
 
 ## Debug
 
@@ -121,3 +122,5 @@ Solution applied: Updated to use the mediaTypes: ['images'] option instead.
 Error identification process: The new expo-sqlite version altered the structure of insert results, making it impossible to retrieve insertId correctly.
 
 Solution applied: Added checks for both insertId and lastInsertRowId to ensure navigation uses the correct user ID.
+=======
+>>>>>>> 8b3cfc9dc2f5655d70591e9644f637d429f31c37

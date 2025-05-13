@@ -202,7 +202,10 @@ const SettingsScreen = ({ route, navigation }) => {
         <Text style={styles.buttonText}>Log Out</Text>
       </TouchableOpacity>
 
+<<<<<<< HEAD
       
+=======
+>>>>>>> 8b3cfc9dc2f5655d70591e9644f637d429f31c37
     </View>
   );
 };
